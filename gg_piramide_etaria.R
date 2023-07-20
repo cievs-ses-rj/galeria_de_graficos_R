@@ -44,6 +44,9 @@ ggplot(data = bd_piramide) +
   scale_fill_manual(values = c("green","blue")) +
   scale_y_discrete(drop = F) +
   theme_light() +
+  theme(
+    legend.position = "top"
+  ) +
   labs(
     x = "Porcentagem",
     y = "Faixas etárias",
